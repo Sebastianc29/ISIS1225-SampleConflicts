@@ -36,20 +36,11 @@ def loadBooks(filename):
     cada uno de ellos, se crea en la lista de autores, a dicho autor y una
     referencia al libro que se esta procesando.
     """
-    booksfile = cf.data_dir + filename
+    filename = fl
+    booksfile = cf.data_dir + fl
     return model.addBooks(booksfile)
 
-
-def loadTags(filename):
-    """
-    Carga todos los tags del archivo y los agrega a la lista de tags
-    """
-    tagsfile = cf.data_dir + filename
-    input_file = csv.DictReader(open(tagsfile, encoding='utf-8'))
-    tags = model.createTagList()
-    for tag in input_file:
-        model.addTag(tags, tag)
-    return tags
+#aaaaaaaaaaaaaaa
 
 
 def loadBooksTags(catalog):
