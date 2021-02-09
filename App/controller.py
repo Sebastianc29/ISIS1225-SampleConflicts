@@ -36,8 +36,8 @@ def loadBooks(filename):
     cada uno de ellos, se crea en la lista de autores, a dicho autor y una
     referencia al libro que se esta procesando.
     """
-    booksfile = cf.data_dir + filename
-    return model.addBooks(booksfile)
+    booksf = cf.data_dir + filename
+    return model.addBooks(booksf)
 
 
 def loadTags(filename):
